@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const posts = require('./db/db.js')
+const postRoutes = require('./routes/post.js')
 //const postController = require('./controllers/postController.js')
 
 // static files
@@ -22,3 +23,4 @@ app.get('/posts', postController.index);
 
 app.get('/posts/:id', PizzaController.show);
 */
+app.use("/posts", pizzaRoutes)

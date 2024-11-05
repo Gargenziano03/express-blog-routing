@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router()
 const postController = require('./controllers/postController.js')
 
-app.get('/posts', postController.index);
+app.get('/', postController.index);
 
-app.get('/posts/:id', PizzaController.show);
+app.get('/:id', PizzaController.show);
 
 
 module.exports = router
