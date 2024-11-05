@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "express-blog-routing",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
