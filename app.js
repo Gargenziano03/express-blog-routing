@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const posts = require('./db/db.js')
-const postController = require('./controllers/postController.js')
+//const postController = require('./controllers/postController.js')
 
 // static files
 app.use(express.static('/public'))
@@ -17,5 +17,8 @@ app.listen(3000, () => {
         data: posts,
         count: posts.length
     })
-});*/
+});
 app.get('/posts', postController.index);
+
+app.get('/posts/:id', PizzaController.show);
+*/
